@@ -1,0 +1,12 @@
+def Fibonacci(num):
+    a, b = 0, 1  #Inicializa os dois primeiros números da sequência de Fibonacci
+    while a <= num:  #Continua o loop enquanto o número atual da sequência for menor ou igual ao número informado
+        if a == num:  #Verifica se o número informado está na sequência de Fibonacci
+            print(f"O número {num} pertence à sequência de Fibonacci.")
+            return
+        a, b = b, a + b  #Atualiza os números da sequência de Fibonacci
+    print(f"O número {num} não pertence à sequência de Fibonacci.")
+
+#Número p verificar
+num = 21
+Fibonacci(num)
